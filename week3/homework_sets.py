@@ -1,0 +1,30 @@
+#1)
+a1 = ["Cookies", "Chocolate", 8, True, -3, -5, "Chocolate", 8, False, 8]
+#2)
+b1 = [ 8, True, 10, 14, "Chocolate", "Milk", "Jelly", True, False, True]
+#3) 
+set_a = set(a1)
+print("Set a:",set_a)
+#4)
+set_b = set(b1)
+print("Set b:", set_b)
+#5)
+union_ab = set_a.union(set_b)
+print("Union:", union_ab)
+#6)
+intersection_ab = set_a.intersection(set_b)
+print("Intersection:", intersection_ab)
+#7)
+union_ab.update({"Kit-Kat", "Oreo"})
+intersection_ab.update({"Kit-Kat", "Oreo"})
+#8)
+new_set = union_ab or intersection_ab
+print("New set:",new_set)
+#9)
+if "Choclate" in new_set:
+    print(True) 
+else:
+    print(False)
+#10)
+new_set.remove("Oreo")
+print(new_set)
